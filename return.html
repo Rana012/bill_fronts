@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>return file</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    Current Time : <span id="time"></span>
+  </body>
 </html>
+
+<script>
+  setInterval(function () {
+      
+    var x = new Date();
+    var x1 = x.getMonth() + 1 + "/" + x.getDate() + "/" + x.getFullYear();
+    x1 =
+      x1 + " - " + x.getHours() + ":" + x.getMinutes() + ":" + x.getSeconds();
+    document.getElementById("time").innerHTML = x1;
+  }, 1000);
+
+</script>
