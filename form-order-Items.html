@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <!--icon link-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
+      <link rel="stylesheet" href="style.css">
+
+         <!--style css-->
+          <style>
+            #brd{
+  padding: 9px;
+  margin-top: 15px;
+  border: 1px solid rgba(59, 57, 57, 0.13);
+  border-radius: 9px;
+}
+
+#line {
+  margin-top: 15px;
+  border: 1px solid rgba(153, 149, 149, 0.651);
+  padding:12px;
+}
+.headding{
+  margin-top: 19px;
+}
+#table-container{
+  padding: 8px;
+  margin: 40px;
+}
+.headding{
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+.table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.table thead{
+  background-color: rgba(150, 80, 241, 0.521);
+}
+.table thead tr th{
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.40;
+  color: aliceblue;
+  opacity: 1;
+  vertical-align: top;
+  border: 1px solid rgba(26, 24, 24, 0.37);
+}
+.table tbody tr td{
+  
+  letter-spacing: 0.45px;
+  font-weight: normal;
+  border: 1px solid rgba(24, 20, 20, 0.267);
+
+}
+#gar{
+  margin-top: 18px;
+}
+.form-check{
+  margin-top: 37px;
+}
+#mar{
+  margin-top: 20px;
+  border: 1px solid rgb(128, 128, 128);
+  background-color: rgba(245, 241, 241, 0.596);
+}
+.mb-3{
+  margin-top: 20px;
+}
+          </style>
+
+
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    
+     <div class="container">
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">Date*</label>
+              <input type="text" class="form-control" id="validationCustom01" value="03/02/2022 14:35" required>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">Reference No</label>
+                <input type="text" class="form-control" id="validationCustom01" value="WHI/03/02/03/459" required>
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">Biller*</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Test Biller</option>
+                  <option selected>Test Biller</option>
+                  <option selected>Test Biller</option>
+                </select>
+              </div>           
+          </form>
+        </div>
+      
+          <!--second row-->
+          
+         <div class="container" >           
+             <div class="row" id="brd">
+               <div class="col-md-12" id="clor">
+                 <h6>Please select these before adding any product</h6>
+                 <hr>
+               </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">Warehouse*</label>
+                    <select id="inputState" class="form-select">
+                      <option selected>Warehouse 1</option>
+                      <option selected>Warehouse 1</option>
+                      <option selected>Warehouse 1</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4">                      
+                    <label for="inputState" class="form-label">Customer*</label>                     
+                    <select id="inputState" class="form-select" >
+                      <option selected>Walk-in Customer</option>
+                      <option selected>Walk-in Customer</option>
+                      <option selected>Walk-in Customer</option>
+                    </select>
+                  </div>
+                </div>
+           </div>
+            
+           <!--order list-->
+
+           <div class="container" >
+             <div class="row" id="line">
+               <div class="col-sm-10">
+                <div class="input-group input-group-lg">
+                  <span class="input-group-text" id="inputGroup-sizing-lg"><i class="bi bi-bar-chart-steps"></i></span>
+                  <input type="text" class="form-control" aria-label="Sizing example input" value="please add products to order list"  aria-describedby="inputGroup-sizing-lg">
+                </div>              
+               </div>
+             </div>
+           </div>
+
+               <!--order item-->
+                <div class="container"  id="table-container">
+                   <div class="row">
+                     <div class="col-md-12">
+                       <h6 class="headding">Order Items*</h6>
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th>Product(Code-Name)</th>
+                              <th>Serial No</th>
+                              <th>Net Unit<br>price</th>
+                              <th>......</th>
+                              <th>Piece</th>
+                              <th>Quantity</th>
+                              <th>Discount</th>
+                              <th>Subtotal<br>(USD)</th>
+                              <th><i class="bi bi-trash3"></i></th>
+                            </tr>
+                          </thead>
+                          <tr>
+                            <td data-label="Product(Code-Name)">1007-Khail</td>                        
+                            <td data-label="Serial No"><input type="text"></td>                        
+                            <td data-label="Net Unitprice">2300.00</td>
+                            <td data-label="......"></td>
+                            <td data-label="Piece"></td>
+                            <td data-label="Quantity"><input type="text"></td>
+                            <td data-label="Discoun">0.00</td>
+                            <td data-label="Subtotal(USD)">2,300.00</td>
+                            <td data-label="Net Unitprice"><i class="bi bi-cart-x"></i></td>
+                          </tr>
+                          <tr>
+                            <td data-label="Product(Code-Name)">1007-Khail</td>                        
+                            <td data-label="Serial No"><input type="text"></td>                        
+                            <td data-label="Net Unitprice">2300.00</td>
+                            <td data-label="......"></td>
+                            <td data-label="Piece"></td>
+                            <td data-label="Quantity"><input type="text"></td>
+                            <td data-label="Discoun">0.00</td>
+                            <td data-label="Subtotal(USD)">2,300.00</td>
+                            <td data-label="Net Unitprice"><i class="bi bi-cart-x"></i></td>
+                          </tr>
+                          <tr>
+                            <td data-label="Product(Code-Name)">Total</td>                        
+                            <td data-label="Serial No"></td>                        
+                            <td data-label="Net Unitprice"></td>
+                            <td data-label="......"></td>
+                            <td data-label="Piece"></td>
+                            <td data-label="Quantity"><input type="text"></td>
+                            <td data-label="Discoun">0.00</td>
+                            <td data-label="Subtotal(USD)">2,300.00</td>
+                            <td data-label="Net Unitprice"><i class="bi bi-cart-x"></i></td>
+                          </tr>
+                        </table>
+                    </table>
+                   </div>
+               
+                   <!--order due-->
+
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p>Old Due <input type="text"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p>Total Due <input type="text"></p> 
+                    </div>
+                  </div>
+                </div>
+
+                  <!--order list-->
+
+              <div class="container"  id="gar">
+                <div class="row">
+                  <div class="col-md-4">                      
+                    <label for="inputState" class="form-label">Order Tax</label>                     
+                    <select id="inputState" class="form-select" >
+                      <option selected>No Tax</option>
+                      <option selected>No Tax</option>
+                      <option selected>No Tax</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Order Discount</label>
+                    <input type="text" class="form-control" id="validationCustom01" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Shipping</label>
+                    <input type="text" class="form-control" id="validationCustom01"  value="0" required>
+                  </div>
+                </div>
+              </div> 
+
+              <!--Document--> 
+
+              <div class="container" id="gar">
+                <div class="row">
+                  <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Attach Document</label>
+                    <input type="text" class="form-control" id="validationCustom01" required>  
+                  </div>
+                  <div class="col-md-4">                      
+                    <label for="inputState" class="form-label">Sale Status*</label>                     
+                    <select id="inputState" class="form-select" >
+                      <option selected>Completed</option>
+                      <option selected>Completed</option>
+                      <option selected>Completed</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Payment Term</label>
+                    <input type="text" class="form-control" id="validationCustom01" required>
+                  </div>
+                </div>
+              </div>  
+              
+              <!--payment box-->
+
+              <div class="container" id="gar">
+                <div class="row">
+                  <div class="col-md-4">                      
+                    <label for="inputState" class="form-label">Payment Status</label>                     
+                    <select id="inputState" class="form-select" >
+                      <option selected>Partial</option>
+                      <option selected>Partial</option>
+                      <option selected>Partial</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Pay in Full
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Pay in Installment
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           
+              <div class="container" id="mar">
+                <div class="row ">
+                  <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Payment Reference NO</label>
+                    <input type="text" class="form-control" id="validationCustom01" required>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Amount</label>
+                    <input type="text" class="form-control" id="validationCustom01" required>
+                  </div>
+                  <div class="col-md-4">                      
+                    <label for="inputState" class="form-label">Paying by</label>                     
+                    <select id="inputState" class="form-select" >
+                      <option selected>Cash</option>
+                      <option selected>Cash</option>
+                      <option selected>Cash</option>
+                    </select>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Payment Note</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Sale Note</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Staff Note</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-2">
+                    <button type="button" class="btn btn-primary">Submit</button>
+                  </div>
+                  <div class="col-md-2">
+                    <button type="button" class="btn btn-danger">Reset</button>
+                  </div>
+                </div>
+              </div>
+                
+
+              <!--order-->
+              
+              <div class="row mb-3">
+                <div class="col-md-12">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>items</th>
+                        <th>Total</th>
+                        <th>Order Discount</th>
+                        <th>Order Tax</th>
+                        <th>Shipping</th>
+                        <th>Grand Total</th>
+                        
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+              </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>

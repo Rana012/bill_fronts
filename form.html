@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+      <!--icons link-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
+    <title>Hello, world!</title>
+
+    <!--Css-->
+     <style>
+         .container{
+          margin-top: 20px;
+        }
+        #bdr{
+            border: 1px solid rgba(146, 145, 145, 0.651);
+            background-color: rgba(224, 220, 220, 0.644);
+            padding: 9px;
+           
+        }
+        .border{
+            border: 1px solid rgba(146, 145, 145, 0.651);
+            background-color: rgba(224, 220, 220, 0.644);
+        }
+     </style>
+     <!--Css End-->
+
+
+  </head>
+  <body>
+      <!--Product-->
+     <div class="container">
+         <div class="row">
+             <div class="col-md-6">
+                 <h6>Product Type*</h6>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Standard</option>
+                    <option value="1">Standard</option>
+                    <option value="2">Standard</option>
+                    <option value="3">Standard</option>
+                  </select>
+             </div>
+         </div>
+     </div>
+       
+       <!--Layout-->
+
+       <div class="container">
+           <div class="row">
+               <div class="col-md-6">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      <h6>Product has multiple variants e.g.Multiole Sizes And/Or Colors</h6>
+                    </label>
+                  </div>
+               </div>
+           </div>
+       </div>
+
+       <!--input-->
+       <div class="container">
+           <div class="row">
+               <div class="col-md-6"  id="bdr">
+                <div class="input-group">
+                    <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" value="Enter Variants Separated By CO">
+                    <span class="input-group-text"><i class="bi bi-plus-circle-fill"></i></span>
+                  </div>
+               </div>
+           </div>
+       </div>
+
+       <!--Warehouse-->
+       <div class="container">
+            <div class="row">
+               <h6>Warehouse Quantity</h6>               
+               <div class="col-md-3">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Warehouse 1(WHI)</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                  </div>
+               </div>
+               <div class="col-md-3">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Warehouse 2(WHI)</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                  </div>
+               </div>
+               <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                     <div class="mb-3">               
+                         <input type="text" class="form-control" id="exampleInputPassword1">
+                       </div>
+                    </div>
+                    <div class="col-md-3">
+                     <div class="mb-3">               
+                         <input type="text" class="form-control" id="exampleInputPassword1">
+                       </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+               </div>
+               
+               <!--Date-->
+               <div class="container">
+                   <div class="row">
+                       <div class="col-md-6">
+                        <label for="exampleFormControlInput1" class="form-label"><h6>Expire Date</h6></label>
+                        <input class="form-control" type="text" placeholder="" aria-label="default input example">
+                       </div>
+                   </div>
+               </div>
+                 
+               <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                     <label for="exampleFormControlInput1" class="form-label"><h6>Unit Labels</h6></label>
+                     <input class="form-control" type="text" placeholder="Countop,piece" aria-label="default input example">
+                    </div>
+                </div>
+            </div>
+                
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                     <label for="exampleFormControlInput1" class="form-label"><h6>Product Size</h6></label>
+                     <input class="form-control" type="text" placeholder="1,777" aria-label="default input example">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                     <label for="exampleFormControlInput1" class="form-label"><h6>Box Unit</h6></label>
+                     <input class="form-control" type="text" placeholder="25" aria-label="default input example">
+                    </div>
+                </div>
+            </div>
+
+            <!--supplier-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>supplier<i class="bi bi-file-plus-fill"></i></h6>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select Supplier</option>
+                            <option value="1">Select Supplier One</option>
+                            <option value="2">Select Supplier Two</option>
+                            <option value="3">Select Supplier Three</option>
+                          </select>
+                    </div>
+                </div>
+            </div>
+                  
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                     <div class="mb-3">               
+                         <input type="text" class="form-control" id="exampleInputPassword1" value="Supplier Part Number" >
+                       </div>
+                    </div>
+                    <div class="col-md-3">
+                     <div class="mb-3">               
+                         <input type="text" class="form-control" id="exampleInputPassword1" value="Supplier Price">
+               </div>
+              </div>
+            </div>
+           </div>
+              
+
+           <!--slug-->
+            
+         <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                 <label for="exampleFormControlInput1" class="form-label"><h6>Slug*</h6></label>
+                 <input class="form-control" type="text" placeholder="" aria-label="default input example">
+                </div>
+            </div>
+        </div>
+
+        <!--product Code-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>product Code</h6>
+                        <div class="input-group">
+                            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                            <span class="input-group-text"><i class="bi bi-box-arrow-right"></i></span>
+                           
+                          </div>
+                          <p>You can scan your barcode and select the correct symbology below</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--biller bonus-->
+                
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                     <label for="exampleFormControlInput1" class="form-label"><h6>biller Bonus</h6></label>
+                     <input class="form-control" type="text" placeholder="" aria-label="default input example">
+                    </div>
+                </div>
+            </div>
+             
+           <!--weight(Kg)-->
+
+           <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                 <label for="exampleFormControlInput1" class="form-label"><h6>weight(Kg)</h6></label>
+                 <input class="form-control" type="text" placeholder="" aria-label="default input example">
+                </div>
+            </div>
+        </div>
+
+        <!--Barcode-->
+       
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6>Barcode Symbology*</h6>
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="1">Select Supplier One</option>
+                        <option value="2">Select Supplier Two</option>
+                        <option value="3">Select Supplier Three</option>
+                      </select>
+                </div>
+            </div>
+        </div>
+
+         <!--Brand-->
+           
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6>Brand</h6>
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="1">Brand One</option>
+                        <option value="2">Brand Two</option>
+                        <option value="3">Brand Three</option>
+                      </select>
+                </div>
+            </div>
+        </div>
+        
+        <!--product-->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6>product Unit*</h6>
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="1">Kg(6)</option>
+                        <option value="2">Kg(6)</option>
+                        <option value="3">Kg(6)</option>
+                      </select>
+                </div>
+            </div>
+        </div>
+        
+        <!--Default-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6>Default Sale Unit</h6>
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="1">Kg(6)</option>
+                        <option value="2">Kg(6)</option>
+                        <option value="3">Kg(6)</option>
+                      </select>
+                </div>
+            </div>
+        </div>
+
+        <!--Default Purchase Unite-->
+            
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6>Default Purchase Unite</h6>
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="1">Kg(6)</option>
+                        <option value="2">Kg(6)</option>
+                        <option value="3">Kg(6)</option>
+                      </select>
+                </div>
+            </div>
+        </div>
+           
+        <!--promoting-->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                 <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                     <label class="form-check-label" for="flexCheckDefault">
+                       <h6>promoting</h6>
+                     </label>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+
+           
+        <!--Alert Quantity-->
+         
+             <div class="container">
+                 <div class="row">
+                     <div class="col-md-6">
+                        <h6>Alert Quantity</h6>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">                               
+                              <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control" aria-label="Text input with checkbox">
+                          </div>
+                     </div>
+                 </div>
+             </div>
+             
+             <!--Product image-->
+
+             <div class="container">
+                 <div class="row">
+                     <div class="col-md-6">
+                         <h6>Product Image</h6>
+                        <div class="input-group mb-3">
+                            <input type="file" class="form-control" id="inputGroupFile02">                           
+                          </div>
+                     </div>
+                 </div>
+             </div>
+                 
+              <!--Product gallery-->
+
+             <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>Product Gallery Image</h6>
+                       <div class="input-group mb-3">
+                           <input type="file" class="form-control" id="inputGroupFile02">                           
+                         </div>
+                    </div>
+                </div>
+            </div>
+           
+            <!--Featurd-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                     <div class="form-check">
+                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                         <label class="form-check-label" for="flexCheckDefault">
+                           <h6>Featurd(Shop homepage listing)</h6>
+                         </label>
+                       </div>
+                    </div>
+                </div>
+            </div>
+
+               
+                <!--Module-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                     <div class="form-check">
+                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                         <label class="form-check-label" for="flexCheckDefault">
+                           <h6>Hide Shpe Module</h6>
+                         </label>
+                       </div>
+                    </div>
+                </div>
+            </div>
+              
+              
+                <!--Custom Fields-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                     <div class="form-check">
+                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                         <label class="form-check-label" for="flexCheckDefault">
+                           <h6>Custom Fields</h6>
+                         </label>
+                       </div>
+                    </div>
+                </div>
+            </div>
+         
+            <!--Product Custom Field-->
+           
+            <div class="container">
+                <div class="row">              
+                   <div class="col-md-2">
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label"><h6>Product Custom Field<br>1</h6></label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                      </div>
+                   </div>
+                   <div class="col-md-2">
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label"><h6>Product Custom Field<br>2</h6></label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                      </div>
+                   </div>
+                   <div class="col-md-2">
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label"><h6>Product Custom Field<br>3</h6></label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                      </div>
+                   </div>
+                   <div class="container">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label"><h6>Product Custom Field<br>4</h6></label>
+                                <input type="text" class="form-control" id="exampleInputPassword1">
+                              </div>
+                           </div>
+                           <div class="col-md-2">
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label"><h6>Product Custom Field<br>5</h6></label>
+                                <input type="text" class="form-control" id="exampleInputPassword1">
+                              </div>
+                           </div>
+                           <div class="col-md-2">
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label"><h6>Product Custom Field<br>6</h6></label>
+                                <input type="text" class="form-control" id="exampleInputPassword1">
+                              </div>
+                           </div>
+                       </div>
+                      </div>
+                     </div>
+                   </div>
+                   
+
+
+
+
+
+
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

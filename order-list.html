@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--icon link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
+    <!--style css-->
+    <style>
+  #brd{
+     padding: 9px;
+     margin-top: 15px;
+     border: 1px solid rgba(99, 98, 98, 0.733);
+     border-radius: 9px;
+}
+
+#line {
+  margin-top: 15px;
+  border: 1px solid rgba(22, 21, 21, 0.555);
+  padding:12px;
+  background-color: rgba(153, 149, 149, 0.651);
+}
+
+
+    </style>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    
+    <!--Date-->
+    <div class="container">
+      <form class="row g-3 needs-validation mb-3 mt-3" novalidate>
+          <div class="col-md-4">
+            <label for="validationCustom01" class="form-label"><h6>Date*</h6></label>
+            <input type="text" class="form-control" id="validationCustom01" value="15/02/2022 15:27" required>
+          </div>
+          <div class="col-md-4">
+              <label for="validationCustom01" class="form-label"><h6>Reference No/Chalan No</h6></label>
+              <input type="text" class="form-control" id="validationCustom01" value="" required>
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label"><h6>Warehouse*</h6></label>
+              <select id="inputState" class="form-select">
+                <option selected>Warehouse 1</option>
+                <option selected>Warehouse 2</option>
+                <option selected>Warehouse 3</option>
+              </select>
+            </div>           
+        </form>
+
+          <!--Status-->
+           
+          <div class="row mb-3">
+            <div class="col-md-4">
+              <label for="inputState" class="form-label"><h6>Status*</h6></label>
+              <select id="inputState" class="form-select">
+                <option selected>Received 1</option>
+                <option selected>Received 2</option>
+                <option selected>Received 3</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label"><h6>Attach Document</h6></label>
+              <input type="file" class="form-control" id="validationCustom01" value="" required>
+            </div>
+          </div>
+            
+          <!--Supplien-->
+
+          <div class="row mb-3" id="brd">
+            <div class="col-md-12">
+              <h6>Please select these before adding any product</h6>
+              <hr>
+            </div>
+             <div class="col-md-6">
+                 <label for="inputState" class="form-label"><h6>Supplien*</h6></label>
+                 <select id="inputState" class="form-select">
+                   <option selected>Keya Cosmetice Limited(Keya Cosmetice Limited)</option>
+                   <option selected>Keya Cosmetice Limited(Keya Cosmetice Limited) 1</option>
+                   <option selected>Keya Cosmetice Limited(Keya Cosmetice Limited) 2</option>
+                 </select>
+               </div>
+             </div>
+
+             <!--add list-->
+             
+             <div class="row mb-3" id="line">
+              <div class="col-sm-12">
+               <div class="input-group input-group-lg">
+                 <span class="input-group-text" id="inputGroup-sizing-lg"><i class="bi bi-upc"></i></span>
+                 <input type="text" class="form-control" aria-label="Sizing example input" value="please add products to order list"  aria-describedby="inputGroup-sizing-lg">
+               </div>              
+              </div>
+            </div>
+            
+            <!--Order Items-->
+
+            <div class="row mb-3">
+              <div class="col-md-12">
+                <h6 class="headding">Order Items*</h6>
+                 <table class="table table-bordered">
+                   <thead class="bg-primary ">
+                     <tr>
+                       <th>Product(Code-Name)</th>
+                       <th>Net Unit<br>Cost</th>                      
+                       <th>Quantity</th>
+                       <th>Discount</th>
+                       <th>Subtotal(USD)</th>
+                       <th><i class="bi bi-trash3"></i></th>
+                     </tr>
+                   </thead>
+                   <tr class="table-warning">
+                    <td data-label="Product(Code-Name)">90557591-Cement</td>                                                             
+                    <td data-label="Net Unitprice">2300.00</td>
+                    <td data-label="Serial No"><input type="text"></td>                     
+                    <td data-label="Discoun">0.00</td>
+                    <td data-label="Subtotal(USD)">450.00</td>
+                    <td data-label="Net Unitprice"><i class="bi bi-cart-x"></i></td>
+                  </tr>
+                  <tr>
+                    <td data-label="Product(Code-Name)">Total</td>                                                                   
+                    <td data-label="Net Unitprice"></td>
+                    <td data-label="Serial No">1.00</td>                     
+                    <td data-label="Discoun">0.00</td>
+                    <td data-label="Subtotal(USD)">450.00</td>
+                    <td data-label="Net Unitprice"><i class="bi bi-cart-x"></i></td>
+                  </tr>
+                 </table>                 
+            </div>
+           </div>
+          
+           <!--Due row-->
+
+           <div class="row mb-4 mt-4">
+             <div class="col-md-4">
+               <h6>Old Due</h6>               
+             </div>
+             <div class="col-md-8">              
+              <input type="text" class="form-control" id="validationCustom01" value="7890.00" required>
+            </div>
+           </div>
+           <div class="row mb-3">
+            <div class="col-md-4">
+              <h6>Total Due</h6>               
+            </div>
+            <div class="col-md-8">              
+             <input type="text" class="form-control" id="validationCustom01" value="7890" required>
+           </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-4">
+              <h6>Discount(5/5%)</h6>               
+            </div>
+            <div class="col-md-8">              
+             <input type="text" class="form-control" id="validationCustom01" value="" required>
+           </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-4">
+              <h6>Order Tax</h6>               
+            </div>
+            <div class="col-md-8">                         
+             <select id="inputState" class="form-select">
+              <option selected>No Tax</option>
+              <option selected>No Tax 2</option>
+              <option selected>No Tax 3</option>
+            </select>
+           </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-4">
+              <h6>Shipping</h6>               
+            </div>
+            <div class="col-md-8">              
+             <input type="text" class="form-control" id="validationCustom01" value="" required>
+           </div>
+          </div>
+
+          <!--Payment row-->
+          
+          <form class="row g-3 needs-validation mb-4 " novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label"><h6>Payment Term</h6></label>
+              <input type="text" class="form-control" id="validationCustom01" value="" required>
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label"><h6>Paying by*</h6></label>
+              <select id="inputState" class="form-select">
+                <option selected>Cash</option>
+                <option selected>CArd</option>
+                <option selected>Cash</option>
+              </select>
+            </div>  
+            <div class="col-md-4">
+                <label for="validationCustom01" class="form-label"><h6>Amount</h6></label>
+                <input type="text" class="form-control" id="validationCustom01" value="2345" required>
+              </div>                       
+          </form>
+            
+          <!--Note-->
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"><h6>Note</h6></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row  mb-3">
+            <div class="col-md-12">
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"><h6>Product Serials</h6></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!--Button-->
+
+          <button type="button" class="btn btn-primary mb-4">Submit</button>
+          <button type="button" class="btn btn-danger mb-4">Reset</button>
+        
+           
+          <!--Grand total-->
+          
+           
+          <div class="row mb-3" id="linetwo">
+            <div class="col-sm-12">
+               <table class="table table-bordered table-warning">
+                <thead class="">
+                  <tr>
+                    <th>Items&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1(1.00)</th>
+                    <th>Total&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;450.00</th>                    
+                    <th>Order Discount&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.00)</th>
+                    <th>Order Tax&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;0.00)</th>
+                    <th>Shipping&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.00)</th>
+                    <th>Grand Total&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;450.00)</th>
+                  </tr>
+                </thead>
+                         
+            </div>
+          </div>
+
+
+
+
+
+        <!--container End-->
+      </div>
+    
+
+      
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>
